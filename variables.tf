@@ -11,4 +11,5 @@ variable "cidr_block" {
 variable "aws_region" {
 }
 variable "count" {
+  default = "2"
 }
