@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "ec2-instance" {
     ami = var.ami_id    # referring to ami_id variable
     instance_type = var.instance_type  # referring to instance_type variable
-    counts = var.instance_count
+    instance_count = var.count
     vpc_security_group_ids = [aws_security_group.mysg.id]
 }
 
