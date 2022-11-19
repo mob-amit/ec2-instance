@@ -7,7 +7,6 @@ resource "aws_instance" "ec2-instance" {
     instance_type = var.instance_type  # referring to instance_type variable
     count = var.instance_count
     vpc_security_group_ids = [aws_security_group.mysg.id]
-    sensitive = "true"
 }
 
 resource "aws_security_group" "mysg" {
