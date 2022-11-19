@@ -10,3 +10,5 @@ variable "cidr_block" {
 }
 variable "aws_region" {
 }
+variable "instance_count" {
+}
